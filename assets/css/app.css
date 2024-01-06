@@ -1,0 +1,85 @@
+/*--------------------------------------------------------------
+#0 General
+--------------------------------------------------------------*/
+@import "preloader.css";
+
+:root{
+    --dark-color:rgb(26, 30, 33);
+    --light-color: rgb(255, 255, 255);
+    --dark-color-op:rgba(26, 30, 33, 0.85);
+
+    --yellow:#F1BC19;
+    --red:#EE3E54;
+    --light-green:#C0E5E4;
+    --brown:#6D584A;
+    --light-brown:rgba(107, 76, 54, 0.8);
+    --grey: #212121;
+    --spot: #F1BC19;
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: url("./../img/bg/main.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    min-height: 100dvh;
+    min-width: 100dvw;
+    background-color: var(--light-brown);
+    color: var(--light-color);
+    margin: 0;
+    padding: 0;
+}
+#main-app{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+#header{
+    width: 100%;
+    /*height: 5dvh;*/
+}
+
+#content{
+    width: 100%;
+    height: 88dvh;
+}
+
+#content #left-content{
+    background-color:var(--dark-color-op);
+    border: 1px solid var(--light-color);
+    border-radius: 15px 0 0 15px !important;
+    height: 100%;
+    width: 15%;
+}
+
+#content #right-content{
+    border-radius: 0 15px 15px 0 !important;
+    height: 100%;
+    width: 85%;
+}
+
+#footer{
+    background-color: #0f5132;
+    width: 100%;
+    /*height: 5dvh;*/
+}
